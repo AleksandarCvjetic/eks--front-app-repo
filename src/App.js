@@ -41,7 +41,7 @@ function App(props) {
   const [query, setQuery] = useState('eks');
   const [search, setSearch] = useState('eks');
 
-  var url = `{backend-ingress ADDRESS}/contents/${search}`
+  var url = `demo-flask-backend:8080/contents/${search}`
 
   useEffect(() => {
     const fetchData = async () => {
